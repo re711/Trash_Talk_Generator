@@ -1,0 +1,43 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h5 class="title center">你想對誰說幹話 </h5>
+    </div> 
+        <form method="POST" action="/" class="d-flex justify-content-center" id="options">
+          <div class="card col-4 m-3 text-center">
+            <div class="form-check form-check-inline">              
+              <label class="form-check-label" for="engineer">
+                  <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="card-img-top" alt="engineer">
+                  <input class="form-check-input my-3" type="radio" name="profession" id="engineer" value="engineer">  
+                  工程師
+              </label>
+            </div>
+          </div>
+          <div class="card col-4 m-3 text-center">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label" for="designer">
+                  <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="card-img-top" alt="designer">
+                  <input class="form-check-input my-3" type="radio" name="profession" id="designer" value="designer">
+                  設計師
+              </label>
+            </div>
+          </div>
+          <div class="card col-4 m-3 text-center">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label" for="entrepreneur">
+                  <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="card-img-top" alt="entrepreneur">
+                  <input class="form-check-input my-3" type="radio" name="profession" id="entrepreneur" value="entrepreneur">
+                  創業家
+              </label>
+            </div>
+          </div> 
+        </form>
+        <div class="col-3 mt-3 text-center">
+            <button class="btn btn-success" type="submit" form="options">產生幹話</button>
+        </div>
+      
+        <div class="col-9 mt-3 flex-grow-1 d-flex justify-content-center align-items-center" style="border: 1px solid ; height: 4em">
+            <p class="text-center">{{generator}}</p>
+        </div> 
+  </div>
+</div>
